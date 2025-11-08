@@ -1,0 +1,45 @@
+[7][      debug] Sqlite write daemon: starting up
+[7][      debug] Sqlite write daemon: set up complete, waiting for connections
+[8][      debug] Sqlite write daemon: process starting, pid= 8
+[7][environment] CWD = /examples
+[7][environment] No .inferconfig file found
+[7][environment] Project root = /examples
+[7][environment] INFER_ARGS =   --progress-bar-style multiline
+[7][environment] command line arguments:   infer -- clang -c hello.c
+[7][environment] Available memory at startup: 6185 MB
+[7][environment] Active checkers: self-in-block (C/C++/ObjC), parameter-not-null-checked (C/C++/ObjC), starvation (C/C++/ObjC, Java), siof (C/C++/ObjC), racerd (C/C++/ObjC, C#/.Net, Java), pulse (C/C++/ObjC, C#/.Net, Erlang, Hack, Java, Python), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java)
+[7][environment] Scheduler: restart
+[7][environment] Cores used: 16
+[7][environment] Infer version v1.2.0
+[7][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[7][environment] 
+[7][   progress] Capturing in make/cc mode...
+[7][   user err] Failed to execute compilation command:
+'/opt/infer-linux-x86_64-v1.2.0/lib/infer/infer/bin/../../facebook-clang-plugins/clang/install/bin/clang' 
+  -c hello.c
+
+Error message:
+clang: error: no such file or directory: 'hello.c'
+
+*** Infer needs a working compilation command to run.
+[7][   user err] Raised at Stdlib.input_line.scan in file "stdlib.ml", line 456, characters 14-31
+Called from Stdio__In_channel.input_line_exn in file "src/in_channel.ml" (inlined), line 64, characters 13-30
+Called from IBase__Utils.with_channel_in in file "src/base/Utils.ml", line 280, characters 11-44
+
+[8][      debug] Detected 0 spec overwrites.
+[8][      debug] Sqlite write daemon: terminating
+[7][      debug] Sqlite write daemon: waiting for process 8 to finish
+[8][      debug] dbwriter.useful_time_user= 0.00024300
+[8][      debug] dbwriter.useful_time_sys= 0.00307000
+[8][      debug] dbwriter.useful_time_wall= 0.01249411
+[8][      debug] dbwriter.useful_time_oncpu_pct= 27%
+[8][      debug] dbwriter.store_sql_user= 0.00000000
+[8][      debug] dbwriter.store_sql_sys= 0.00000000
+[8][      debug] dbwriter.store_sql_wall= 0.00000000
+[8][      debug] dbwriter.store_sql_oncpu_pct= 0%
+[8][      debug] dbwriter.store_sql_pct= 0%
+[8][      debug] dbwriter.total_time_user= 0.00159700
+[8][      debug] dbwriter.total_time_sys= 0.00858500
+[8][      debug] dbwriter.total_time_wall= 0.23042313
+[8][      debug] dbwriter.total_time_oncpu_pct= 4%
+[8][      debug] [7][      debug] Sqlite write daemon: process 8 terminated

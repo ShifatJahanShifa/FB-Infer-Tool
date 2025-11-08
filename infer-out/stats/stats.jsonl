@@ -1,0 +1,16 @@
+{"int":{"is_main_process":1,"pid":7,"time":1762607476,"value":6185},"normal":{"command":"run","event":"count.startup_mem_avail_MB","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":7,"time":1762607476,"value":23},"normal":{"command":"run","event":"time.run_prologue","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":0},"normal":{"command":"run","event":"count.overwritten_specs","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":3070},"normal":{"command":"run","event":"time.dbwriter.useful_time_sys","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":242},"normal":{"command":"run","event":"time.dbwriter.useful_time_user","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":12494},"normal":{"command":"run","event":"time.dbwriter.useful_time_wall","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":27},"normal":{"command":"run","event":"count.dbwriter.useful_time_oncpu_pct","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":0},"normal":{"command":"run","event":"time.dbwriter.store_sql_sys","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":0},"normal":{"command":"run","event":"time.dbwriter.store_sql_user","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":0},"normal":{"command":"run","event":"time.dbwriter.store_sql_wall","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":0},"normal":{"command":"run","event":"count.dbwriter.store_sql_oncpu_pct","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":0},"normal":{"command":"run","event":"count.dbwriter.store_sql_pct","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":8584},"normal":{"command":"run","event":"time.dbwriter.total_time_sys","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":1597},"normal":{"command":"run","event":"time.dbwriter.total_time_user","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":230423},"normal":{"command":"run","event":"time.dbwriter.total_time_wall","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
+{"int":{"is_main_process":1,"pid":8,"time":1762607476,"value":4},"normal":{"command":"run","event":"count.dbwriter.total_time_oncpu_pct","hostname":"12e61a4e37fa","infer_commit":"4c53e80"},"tags":{}}
