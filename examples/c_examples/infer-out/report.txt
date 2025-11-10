@@ -1,0 +1,45 @@
+#0
+example.c:29: error: Null Dereference
+  `max` could be null (null value originating from line 28) and is dereferenced. 
+  27. int simple_null_pointer() {
+  28.   struct Person* max = 0;
+  29.   return max->age;
+               ^
+  30. }
+  31. 
+
+#1
+example.c:41: error: Null Dereference
+  `joe` could be null (from the call to `Person_create()` on line 40) and is dereferenced in the call to `get_age()`. 
+  39. int null_pointer_interproc() {
+  40.   struct Person* joe = Person_create(32, 64, 140);
+  41.   return get_age(joe);
+               ^
+  42. }
+  43. 
+
+#2
+example.c:55: error: Dead Store
+  The value written to `&p` is never used. 
+  53. void simple_leak() {
+  54.   int* p;
+  55.   p = (int*)malloc(sizeof(int));
+        ^
+  56. }
+  57. 
+
+#3
+example.c:55: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 55 is not freed after the last access at line 55, column 3. 
+  53. void simple_leak() {
+  54.   int* p;
+  55.   p = (int*)malloc(sizeof(int));
+        ^
+  56. }
+  57. 
+
+Found 4 issues
+             Issue Type(ISSUED_TYPE_ID): #
+  Null Dereference(NULLPTR_DEREFERENCE): 2
+             Memory Leak(MEMORY_LEAK_C): 1
+                 Dead Store(DEAD_STORE): 1

@@ -1,0 +1,315 @@
+[12][      debug] Sqlite write daemon: starting up
+[12][      debug] Sqlite write daemon: set up complete, waiting for connections
+[13][      debug] Sqlite write daemon: process starting, pid= 13
+[12][environment] CWD = /examples/examples/c_examples
+[12][environment] No .inferconfig file found
+[12][environment] Project root = /examples/examples/c_examples
+[12][environment] INFER_ARGS =   @/tmp/args.tmp.d6de1d --progress-bar-style multiline
+[12][environment] command line arguments:   infer run -- make
+[12][environment] Available memory at startup: 6525 MB
+[12][environment] Active checkers: self-in-block (C/C++/ObjC), parameter-not-null-checked (C/C++/ObjC), starvation (C/C++/ObjC, Java), siof (C/C++/ObjC), racerd (C/C++/ObjC, C#/.Net, Java), pulse (C/C++/ObjC, C#/.Net, Erlang, Hack, Java, Python), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java)
+[12][environment] Scheduler: restart
+[12][environment] Cores used: 16
+[12][environment] Infer version v1.2.0
+[12][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[12][environment] 
+[12][   progress] Capturing in make/cc mode...
+[12][environment] Running command make with env:
+[12][environment] (Extend((PATH /opt/infer-linux-x86_64-v1.2.0/lib/infer/infer/bin/../lib/wrappers:/infer/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)(INFER_OLD_PATH /infer/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)))
+[12][environment] 
+
+[17][      debug] 
+[17][      debug] *** Beginning capture of file /examples/examples/c_examples/example.c ***
+[17][      debug] Elapsed: 657ms.
+[17][      debug] GC stats for capture:
+[17][      debug]   minor_words: 1.77965e+06
+[17][      debug]   promoted_words: 414844
+[17][      debug]   major_words: 432159
+[17][      debug]   minor_collections: 3
+[17][      debug]   major_collections: 0
+[17][      debug]   compactions: 0
+[17][      debug]   top_heap_words: 1331712
+[17][      debug]   
+[17][      debug] GC stats for main_process_full:
+[17][      debug]   minor_words: 4.49857e+06
+[17][      debug]   promoted_words: 1.12225e+06
+[17][      debug]   major_words: 1.17722e+06
+[17][      debug]   minor_collections: 11
+[17][      debug]   major_collections: 1
+[17][      debug]   compactions: 0
+[17][      debug]   top_heap_words: 1331712
+[17][      debug]   
+
+[22][      debug] 
+[22][      debug] *** Beginning capture of file /examples/examples/c_examples/hello.c ***
+[22][      debug] Elapsed: 150ms.
+[22][      debug] GC stats for capture:
+[22][      debug]   minor_words: 734108
+[22][      debug]   promoted_words: 235284
+[22][      debug]   major_words: 247775
+[22][      debug]   minor_collections: 2
+[22][      debug]   major_collections: 0
+[22][      debug]   compactions: 0
+[22][      debug]   top_heap_words: 1006592
+[22][      debug]   
+[22][      debug] GC stats for main_process_full:
+[22][      debug]   minor_words: 3.45302e+06
+[22][      debug]   promoted_words: 942685
+[22][      debug]   major_words: 992836
+[22][      debug]   minor_collections: 10
+[22][      debug]   major_collections: 1
+[22][      debug]   compactions: 0
+[22][      debug]   top_heap_words: 1006592
+[22][      debug]   
+[12][      debug] GC stats for capture:
+[12][      debug]   minor_words: 1525
+[12][      debug]   promoted_words: 0
+[12][      debug]   major_words: 514
+[12][      debug]   minor_collections: 0
+[12][      debug]   major_collections: 0
+[12][      debug]   compactions: 0
+[12][      debug]   top_heap_words: 760832
+[12][      debug]   
+[12][environment] Parallel jobs: 16
+[12][   progress] Found 2 source files to analyze in /examples/examples/c_examples/infer-out
+[36][   progress] example.c starting
+[35][   progress] hello.c starting
+[28][   progress] Analysing block of 200 procs, starting with test
+[31][   progress] Analysing block of 200 procs, starting with simple_null_pointer
+[29][   progress] Analysing block of 200 procs, starting with get_age
+[30][   progress] Analysing block of 200 procs, starting with simple_leak
+[34][   progress] Analysing block of 200 procs, starting with fileNotClosed
+[32][   progress] Analysing block of 200 procs, starting with null_pointer_interproc
+[27][   progress] Analysing block of 200 procs, starting with Person_create
+[33][   progress] Analysing block of 200 procs, starting with common_realloc_leak
+[35][   progress] hello.c DONE
+[37][   progress] hello.c starting
+[37][   progress] hello.c DONE
+[36][   progress] example.c DONE
+[28][   progress] example.c starting
+[28][   progress] example.c DONE
+[12][      debug] Backend stats:
+[12][      debug]   summary_file_try_load= 51
+[12][      debug]   summary_read_from_disk= 14
+[12][      debug]   summary_cache_hits= 14 (21%)
+[12][      debug]   summary_cache_misses= 51
+[12][      debug]   ondemand_procs_analyzed= 8
+[12][      debug]   proc_locker_lock_time_user= 0.00146000
+[12][      debug]   proc_locker_lock_time_sys= 0.00244100
+[12][      debug]   proc_locker_lock_time_wall= 0.11114076
+[12][      debug]   proc_locker_lock_time_oncpu_pct= 4%
+[12][      debug]   proc_locker_unlock_time_user= 0.00176200
+[12][      debug]   proc_locker_unlock_time_sys= 0.00070600
+[12][      debug]   proc_locker_unlock_time_wall= 0.02665423
+[12][      debug]   proc_locker_unlock_time_oncpu_pct= 9%
+[12][      debug]   restart_scheduler_useful_time_user= 0.73756200
+[12][      debug]   restart_scheduler_useful_time_sys= 0.19386600
+[12][      debug]   restart_scheduler_useful_time_wall= 1.77755215
+[12][      debug]   restart_scheduler_useful_time_oncpu_pct= 52%
+[12][      debug]   restart_scheduler_total_time_user= 0.73972200
+[12][      debug]   restart_scheduler_total_time_sys= 0.20310800
+[12][      debug]   restart_scheduler_total_time_wall= 1.80132554
+[12][      debug]   restart_scheduler_total_time_oncpu_pct= 52%
+[12][      debug]   pulse_aliasing_contradictions= 0
+[12][      debug]   pulse_args_length_contradictions= 0
+[12][      debug]   pulse_captured_vars_length_contradictions= 0
+[12][      debug]   pulse_disjuncts_dropped= 0
+[12][      debug]   pulse_interrupted_loops= 0
+[12][      debug]   pulse_summaries_contradictions= 0
+[12][      debug]   pulse_summaries_unsat_for_caller= 2
+[12][      debug]   pulse_summaries_unsat_for_caller_percent= 25
+[12][      debug]   pulse_summaries_with_some_unreachable_nodes= 3
+[12][      debug]   pulse_summaries_with_some_unreachable_nodes_percent= 37
+[12][      debug]   pulse_summaries_with_some_unreachable_returns= 2
+[12][      debug]   pulse_summaries_with_some_unreachable_returns_percent= 2.5%
+[12][      debug]   pulse_summaries_count= [1 -> 5, 2 -> 2, 4 -> 1]
+[12][      debug]   pulse_summaries_total_disjuncts= 13
+[12][      debug]   pulse_summaries_count_0_continue_program= 2
+[12][      debug]   pulse_summaries_count_0_percent= 25
+[12][      debug]   topl_reachable_calls= 0
+[12][      debug]   timeouts= 0
+[12][      debug]   timings= timings for liveness:
+[12][      debug]     p10: 0.000000s p20: 0.000000s p30: 0.000000s p40: 0.000025s
+[12][      debug]     p50: 0.000055s p60: 0.000084s p70: 0.000116s p80: 0.000173s
+[12][      debug]     p90: 0.000276s p95: 0.000317s p96: 0.000317s p97: 0.000317s
+[12][      debug]     p98: 0.000317s p99: 0.000317s p99.9: 0.000317s p99.99: 0.000317s 
+[12][      debug]   timings for parameter-not-null-checked:
+[12][      debug]     p10: 0.000000s p20: 0.000000s p30: 0.000007s p40: 0.000038s
+[12][      debug]     p50: 0.000069s p60: 0.000101s p70: 0.000106s p80: 0.000119s
+[12][      debug]     p90: 0.000161s p95: 0.000185s p96: 0.000185s p97: 0.000185s
+[12][      debug]     p98: 0.000185s p99: 0.000185s p99.9: 0.000185s p99.99: 0.000185s 
+[12][      debug]   timings for pulse:
+[12][      debug]     p10: 0.000000s p20: 0.000000s p30: 0.000148s p40: 0.000444s
+[12][      debug]     p50: 0.000741s p60: 0.000936s p70: 0.001695s p80: 0.007569s
+[12][      debug]     p90: 0.016600s p95: 0.020156s p96: 0.020156s p97: 0.020156s
+[12][      debug]     p98: 0.020156s p99: 0.020156s p99.9: 0.020156s p99.99: 0.020156s 
+[12][      debug]   timings for racerd:
+[12][      debug]     p10: 0.000000s p20: 0.000000s p30: 0.000002s p40: 0.000005s
+[12][      debug]     p50: 0.000009s p60: 0.000047s p70: 0.000134s p80: 0.000162s
+[12][      debug]     p90: 0.000177s p95: 0.000181s p96: 0.000181s p97: 0.000181s
+[12][      debug]     p98: 0.000181s p99: 0.000181s p99.9: 0.000181s p99.99: 0.000181s 
+[12][      debug]   timings for self-in-block:
+[12][      debug]     p10: 0.000000s p20: 0.000000s p30: 0.000001s p40: 0.000003s
+[12][      debug]     p50: 0.000005s p60: 0.000008s p70: 0.000018s p80: 0.000027s
+[12][      debug]     p90: 0.000028s p95: 0.000028s p96: 0.000028s p97: 0.000028s
+[12][      debug]     p98: 0.000028s p99: 0.000028s p99.9: 0.000028s p99.99: 0.000028s 
+[12][      debug]   timings for siof:
+[12][      debug]     p10: 0.000000s p20: 0.000000s p30: 0.000044s p40: 0.000132s
+[12][      debug]     p50: 0.000221s p60: 0.000287s p70: 0.000316s p80: 0.000353s
+[12][      debug]     p90: 0.000363s p95: 0.000365s p96: 0.000365s p97: 0.000365s
+[12][      debug]     p98: 0.000365s p99: 0.000365s p99.9: 0.000365s p99.99: 0.000365s 
+[12][      debug]   timings for starvation:
+[12][      debug]     p10: 0.000000s p20: 0.000000s p30: 0.000011s p40: 0.000025s
+[12][      debug]     p50: 0.000039s p60: 0.000063s p70: 0.000125s p80: 0.000161s
+[12][      debug]     p90: 0.003292s p95: 0.005373s p96: 0.005373s p97: 0.005373s
+[12][      debug]     p98: 0.005373s p99: 0.005373s p99.9: 0.005373s p99.99: 0.005373s 
+[12][      debug]   timings for preanalysis:
+[12][      debug]     p10: 0.001369s p20: 0.028355s p30: 0.090939s p40: 0.091742s
+[12][      debug]     p50: 0.094773s p60: 0.096723s p70: 0.101996s p80: 0.106010s
+[12][      debug]     p90: 0.108929s p95: 0.110090s p96: 0.110090s p97: 0.110090s
+[12][      debug]     p98: 0.110090s p99: 0.110090s p99.9: 0.110090s p99.99: 0.110090s 
+[12][      debug]   
+[12][      debug]   longest_proc_duration_heap= [
+[12][      debug]   265372us: example.c: fileNotClosed
+[12][      debug]   255167us: example.c: common_realloc_leak
+[12][      debug]   248840us: example.c: simple_leak
+[12][      debug]   236643us: example.c: get_age
+[12][      debug]   232519us: hello.c: test
+[12][      debug]   231210us: example.c: Person_create
+[12][      debug]   222891us: example.c: simple_null_pointer
+[12][      debug]   66491us: example.c: null_pointer_interproc
+[12][      debug]   ]
+[12][      debug]   process_times_user= 0.76442400
+[12][      debug]   process_times_sys= 0.22891200
+[12][      debug]   process_times_wall= 8.55349348
+[12][      debug]   process_times_oncpu_pct= 12%
+[12][      debug]   useful_times_user= 0.76300400
+[12][      debug]   useful_times_sys= 0.22665400
+[12][      debug]   useful_times_wall= 2.22307170
+[12][      debug]   useful_times_oncpu_pct= 45%
+[12][      debug]   spec_store_times_user= 0.69345900
+[12][      debug]   spec_store_times_sys= 0.04529700
+[12][      debug]   spec_store_times_wall= 1.52259707
+[12][      debug]   spec_store_times_oncpu_pct= 49%
+[12][      debug]   
+[12][      debug] GC stats for backend_stats.gc_stats_add.:
+[12][      debug]   minor_words: 2.96275e+06
+[12][      debug]   promoted_words: 953394
+[12][      debug]   major_words: 967732
+[12][      debug]   minor_collections: 2
+[12][      debug]   major_collections: 0
+[12][      debug]   compactions: 0
+[12][      debug]   top_heap_words: 14298112
+[12][      debug]   
+[12][      debug] GC stats for backend_stats.gc_stats_max.:
+[12][      debug]   minor_words: 982694
+[12][      debug]   promoted_words: 481275
+[12][      debug]   major_words: 482112
+[12][      debug]   minor_collections: 1
+[12][      debug]   major_collections: 0
+[12][      debug]   compactions: 0
+[12][      debug]   top_heap_words: 1331712
+[12][      debug]   
+[12][      debug] Average over 16 processes
+[12][      debug] GC stats for backend_stats.gc_stats_average.:
+[12][      debug]   minor_words: 185172
+[12][      debug]   promoted_words: 59587.1
+[12][      debug]   major_words: 60483.2
+[12][      debug]   minor_collections: 0
+[12][      debug]   major_collections: 0
+[12][      debug]   compactions: 0
+[12][      debug]   top_heap_words: 893632
+[12][      debug]   
+[12][      debug] Analysis phase finished in 899ms
+[12][      debug] backend_stats.scheduler_process_analysis_time_user= 0.04083500
+[12][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.17103500
+[12][      debug] backend_stats.scheduler_process_analysis_time_wall= 0.89828799
+[12][      debug] backend_stats.scheduler_process_analysis_time_oncpu_pct= 24%
+[12][      debug] GC stats for analysis_scheduler:
+[12][      debug]   minor_words: 651231
+[12][      debug]   promoted_words: 172572
+[12][      debug]   major_words: 494899
+[12][      debug]   minor_collections: 2
+[12][      debug]   major_collections: 2
+[12][      debug]   compactions: 1
+[12][      debug]   top_heap_words: 1331712
+[12][      debug]   
+[12][     result] 
+example.c:29: error: Null Dereference
+  `max` could be null (null value originating from line 28) and is dereferenced. 
+  27. int simple_null_pointer() {
+  28.   struct Person* max = 0;
+  29.   return max->age;
+               ^
+  30. }
+  31. 
+
+example.c:41: error: Null Dereference
+  `joe` could be null (from the call to `Person_create()` on line 40) and is dereferenced in the call to `get_age()`. 
+  39. int null_pointer_interproc() {
+  40.   struct Person* joe = Person_create(32, 64, 140);
+  41.   return get_age(joe);
+               ^
+  42. }
+  43. 
+
+example.c:55: error: Dead Store
+  The value written to `&p` is never used. 
+  53. void simple_leak() {
+  54.   int* p;
+  55.   p = (int*)malloc(sizeof(int));
+        ^
+  56. }
+  57. 
+
+example.c:55: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 55 is not freed after the last access at line 55, column 3. 
+  53. void simple_leak() {
+  54.   int* p;
+  55.   p = (int*)malloc(sizeof(int));
+        ^
+  56. }
+  57. 
+
+
+Found 4 issues
+             Issue Type(ISSUED_TYPE_ID): #
+  Null Dereference(NULLPTR_DEREFERENCE): 2
+             Memory Leak(MEMORY_LEAK_C): 1
+                 Dead Store(DEAD_STORE): 1
+
+[12][      debug] GC stats for report:
+[12][      debug]   minor_words: 91054
+[12][      debug]   promoted_words: 0
+[12][      debug]   major_words: 3078
+[12][      debug]   minor_collections: 0
+[12][      debug]   major_collections: 0
+[12][      debug]   compactions: 0
+[12][      debug]   top_heap_words: 1331712
+[12][      debug]   
+[12][      debug] GC stats for main_process_full:
+[12][      debug]   minor_words: 3.71092e+06
+[12][      debug]   promoted_words: 880041
+[12][      debug]   major_words: 1.25133e+06
+[12][      debug]   minor_collections: 10
+[12][      debug]   major_collections: 3
+[12][      debug]   compactions: 1
+[12][      debug]   top_heap_words: 1331712
+[12][      debug]   
+[13][      debug] Detected 0 spec overwrites.
+[13][      debug] Sqlite write daemon: terminating
+[12][      debug] Sqlite write daemon: waiting for process 13 to finish
+[13][      debug] dbwriter.useful_time_user= 0.10731300
+[13][      debug] dbwriter.useful_time_sys= 0.01961500
+[13][      debug] dbwriter.useful_time_wall= 0.41261405
+[13][      debug] dbwriter.useful_time_oncpu_pct= 31%
+[13][      debug] dbwriter.store_sql_user= 0.00701800
+[13][      debug] dbwriter.store_sql_sys= 0.00000000
+[13][      debug] dbwriter.store_sql_wall= 0.05453905
+[13][      debug] dbwriter.store_sql_oncpu_pct= 13%
+[13][      debug] dbwriter.store_sql_pct= 6%
+[13][      debug] dbwriter.total_time_user= 0.12430200
+[13][      debug] dbwriter.total_time_sys= 0.04285400
+[13][      debug] dbwriter.total_time_wall= 3.42129605
+[13][      debug] dbwriter.total_time_oncpu_pct= 5%
+[13][      debug] [12][      debug] Sqlite write daemon: process 13 terminated
