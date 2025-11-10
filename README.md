@@ -18,12 +18,8 @@ Infer checks for null pointer dereferences, memory leaks, coding conventions and
 
 There are three ways to download and install fbinfer. Those are:
 - binary releases.
-- build infer from source.
 - use our Docker image.
 
-**Option 2 -** Build from Source (advanced, not recommended on native Windows)
-You can technically compile Infer from source using OCaml, opam, and Cygwin or MSYS2, but it’s extremely complex and prone to errors (Infer depends heavily on Unix tooling and Clang).
-Even Meta’s team does not support Windows builds officially.
 
 Or to quick startup, we can use
 codeboard.  
